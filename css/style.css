@@ -1,0 +1,34 @@
+
+.page {
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+}
+
+/* language */
+
+.language {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.language__img {
+    margin: 2px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.language__img:hover,
+.language__img_active {
+    opacity: 1;
+}
