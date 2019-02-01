@@ -1,4 +1,3 @@
-
 .page {
         display: flex;
         min-height: 100vh;
@@ -6,9 +5,22 @@
         padding: 0;
 }
 
+/* Фиксируем высоту, которую меняет панель гугла*/
+
+.page_fix {
+    top: 0 !important;
+    position: static !important;
+}
+
 .content {
     text-align: center;
     margin: auto;
+}
+
+/* Прячем панель гугла */
+
+.skiptranslate {
+    display: none !important;
 }
 
 /* language */
