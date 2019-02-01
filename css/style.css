@@ -1,20 +1,18 @@
-.page {
-        display: flex;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-/* Фиксируем высоту, которую меняет панель гугла*/
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла*/
 
 .page_fix {
     top: 0 !important;
     position: static !important;
-}
-
-.content {
-    text-align: center;
-    margin: auto;
 }
 
 /* Прячем панель гугла */
@@ -43,4 +41,11 @@
 .language__img:hover,
 .language__img_active {
     opacity: 1;
+}
+
+/* content */
+
+.content {
+    text-align: center;
+    margin: auto;
 }
