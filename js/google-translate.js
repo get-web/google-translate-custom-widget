@@ -1,10 +1,14 @@
+/*!***************************************************
+ * google-translate.js v1.0.0
+ * https://Get-Web.Site/
+ * author: L2Banners
+ *****************************************************/
+
 const googleTranslateConfig = {
     lang: "ru",
 };
 
 function TranslateInit() {
-
-
     let code = TranslateGetCode();
     // Находим флаг с выбранным языком для перевода и добавляем к нему активный класс
     $('[data-google-lang="' + code + '"]').addClass('language__img_active');
