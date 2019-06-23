@@ -1,11 +1,15 @@
 /*!***************************************************
- * google-translate.js v1.0.0
+ * google-translate.js v1.0.1
  * https://Get-Web.Site/
  * author: L2Banners
  *****************************************************/
 
 const googleTranslateConfig = {
     lang: "ru",
+    /* Если скрипт не работает на поддомене, 
+    раскомментируйте и
+    укажите основной домен в свойстве domain */
+    /* domain: "Get-Web.Site" */
 };
 
 function TranslateInit() {
@@ -16,7 +20,7 @@ function TranslateInit() {
     if (code == googleTranslateConfig.lang) {
         // Если язык по умолчанию, совпадает с языком на который переводим
         // То очищаем куки
-        TranslateClearCookie();
+        TranslateCookieHandler(null, googleTranslateConfig.domain);
     }
 
     // Инициализируем виджет с языком по умолчанию
@@ -26,7 +30,7 @@ function TranslateInit() {
 
     // Вешаем событие  клик на флаги
     $('[data-google-lang]').click(function () {
-        TranslateSetCookie($(this).attr("data-google-lang"))
+        TranslateCookieHandler("/auto/" + $(this).attr("data-google-lang"), googleTranslateConfig.domain);
         // Перезагружаем страницу
         window.location.reload();
     });
@@ -38,17 +42,20 @@ function TranslateGetCode() {
     return lang.substr(-2);
 }
 
-function TranslateClearCookie() {
-    $.cookie('googtrans', null);
-    $.cookie("googtrans", null, {
+function TranslateCookieHandler(val, domain) {
+    // Записываем куки /язык_который_переводим/язык_на_который_переводим
+    $.cookie('googtrans', val);
+    $.cookie("googtrans", val, {
         domain: "." + document.domain,
     });
-}
 
-function TranslateSetCookie(code) {
-    // Записываем куки /язык_который_переводим/язык_на_который_переводим
-    $.cookie('googtrans', "/auto/" + code);
-    $.cookie("googtrans", "/auto/" + code, {
-        domain: "." + document.domain,
+    if (domain == "undefined") return;
+    // записываем куки для домена, если он назначен в конфиге
+    $.cookie("googtrans", val, {
+        domain: domain,
+    });
+
+    $.cookie("googtrans", val, {
+        domain: "." + domain,
     });
 }
