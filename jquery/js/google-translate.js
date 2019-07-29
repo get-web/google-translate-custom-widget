@@ -1,5 +1,5 @@
 /*!***************************************************
- * google-translate.js v1.0.1
+ * google-translate.js v1.0.2
  * https://Get-Web.Site/
  * author: L2Banners
  *****************************************************/
