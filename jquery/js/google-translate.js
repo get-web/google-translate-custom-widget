@@ -39,7 +39,7 @@ function TranslateInit() {
 function TranslateGetCode() {
     // Если куки нет, то передаем дефолтный язык
     let lang = ($.cookie('googtrans') != undefined && $.cookie('googtrans') != "null") ? $.cookie('googtrans') : googleTranslateConfig.lang;
-    return lang.substr(-2);
+    return lang.match(/(?!^\/)[^\/]*$/gm)[0];
 }
 
 function TranslateCookieHandler(val, domain) {
