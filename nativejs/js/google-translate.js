@@ -33,7 +33,7 @@ function TranslateInit() {
 
     // Вешаем событие  клик на флаги
     TranslateEventHandler('click', '[data-google-lang]', function (e) {
-        TranslateCookieHandler("/" + googleTranslateConfig.lang + "/" + e.target.getAttribute("data-google-lang"), googleTranslateConfig.domain);
+        TranslateCookieHandler("/" + googleTranslateConfig.lang + "/" + e.getAttribute("data-google-lang"), googleTranslateConfig.domain);
         // Перезагружаем страницу
         window.location.reload();
     });
@@ -63,8 +63,9 @@ function TranslateCookieHandler(val, domain) {
     });
 }
 
-function TranslateEventHandler(event, el, handler) {
+function TranslateEventHandler(event, selector, handler) {
     document.addEventListener(event, function (e) {
-        if (e.target.closest(el)) handler(e);
+        let el = e.target.closest(selector);
+        if (el) handler(el);
     });
 }
