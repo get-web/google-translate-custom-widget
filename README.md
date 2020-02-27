@@ -4,6 +4,8 @@
 
 Пример необходимо запускать непосредственно на сервере, иначе не будут работать куки. То есть недостаточно просто скачать все файлы и кликнуть по index.html. Так же пример не будет работать в песочницах, поскольку они не позволяют записывать куки, по крайней мере codepen.
 
+[Концепция](https://get-web.site/blog/29-kastomnyj-vidzhet-googletranslate-dlja-sajta.html)
+
 # Example
 
 [Demo Page](http://demo.l2banners.ru/google-translate-custom-widget)
