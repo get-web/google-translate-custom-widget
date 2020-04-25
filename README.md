@@ -3,14 +3,22 @@
 ![](https://hsto.org/webt/_p/l6/1j/_pl61jqw1ia7w2r7at13fdzwqre.gif) 
 
 # Install:
- Add js:
+## Add js
+ ### native js:
  ```
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
  ```
+ ### or jQuery:
+ ```
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/google-translate.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+ ```
  
- Add html:
+ ## Add html:
  ```
  <div class="language">
     <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
@@ -26,7 +34,7 @@
     <img src="images/lang/lang__sv.png" alt="sv" data-google-lang="sv" class="language__img">
 </div>
  ```
-# Example
+## Example
 
 [Demo Page](http://demo.l2banners.ru/google-translate-custom-widget)
 
