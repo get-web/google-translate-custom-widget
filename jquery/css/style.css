@@ -1,18 +1,15 @@
+/* Виджет назначает height: 100% , что может привести к непредксказуемому результату, если вы этого не планровали */
+
+html {
+    height: auto !important;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла */
+
 body {
-    margin: 0;
-    padding: 0;
-}
-
-.page {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* Фиксируем позицию body, которую меняет панель гугла*/
-
-.page_fix {
     top: 0 !important;
     position: static !important;
+    min-height: 100vh !important;
 }
 
 /* Прячем панель гугла */
@@ -42,6 +39,12 @@ body {
 .language__img:hover,
 .language__img_active {
     opacity: 1;
+}
+
+/* Стили для демонстрации */
+
+body {
+    display: flex;
 }
 
 /* content */
