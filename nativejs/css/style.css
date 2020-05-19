@@ -18,6 +18,14 @@ body {
     display: none !important;
 }
 
+/* Убираем подсветку ссылок */
+
+.goog-text-highlight {
+    background-color: inherit;
+    box-shadow: none;
+    box-sizing: inherit;
+}
+
 /* language */
 
 .language {
