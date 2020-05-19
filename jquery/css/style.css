@@ -18,6 +18,19 @@ body {
     display: none !important;
 }
 
+/* убираем подсветку ссылок */
+.goog-text-highlight {
+    background-color: inherit;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+
 /* language */
 
 .language {
