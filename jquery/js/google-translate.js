@@ -1,11 +1,15 @@
 /*!***************************************************
- * google-translate.js v1.0.2
+ * google-translate.js v1.0.3
  * https://Get-Web.Site/
- * author: L2Banners
+ * author: Vitalii P.
  *****************************************************/
 
 const googleTranslateConfig = {
+    /* Original language */
     lang: "ru",
+    /* The language we translate into on the first visit*/
+    /* Язык, на который переводим при первом посещении */
+    langFirstVisit: 'en',
     /* Если скрипт не работает на поддомене, 
     раскомментируйте и
     укажите основной домен в свойстве domain */
@@ -13,6 +17,12 @@ const googleTranslateConfig = {
 };
 
 function TranslateInit() {
+
+    if (googleTranslateConfig.langFirstVisit && !$.cookie('googtrans')) {
+        // Если установлен язык перевода для первого посещения и куки не назначены
+        TranslateCookieHandler("/auto/" + googleTranslateConfig.langFirstVisit);
+    }
+
     let code = TranslateGetCode();
     // Находим флаг с выбранным языком для перевода и добавляем к нему активный класс
     $('[data-google-lang="' + code + '"]').addClass('language__img_active');
