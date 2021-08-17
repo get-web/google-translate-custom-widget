@@ -9,7 +9,6 @@ html {
 body {
     top: 0 !important;
     position: static !important;
-    min-height: 100vh !important;
 }
 
 /* Прячем панель гугла */
@@ -47,17 +46,4 @@ body {
 .language__img:hover,
 .language__img_active {
     opacity: 1;
-}
-
-/* Стили для демонстрации */
-
-body {
-    display: flex;
-}
-
-/* content */
-
-.content {
-    text-align: center;
-    margin: auto;
 }

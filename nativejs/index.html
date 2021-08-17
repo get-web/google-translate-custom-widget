@@ -5,10 +5,13 @@
         <meta charset="utf-8" />
         <title>Пользовательский виджет googleTranslate для сайта на чистом js</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+
+        <!--  google-translate -->
+        <link rel="stylesheet" href="css/google-translate.css">
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script src="js/google-translate.js"></script>
-        <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+        <!--  END google-translate -->
+
     </head>
 
     <body class="body">
@@ -26,13 +29,32 @@
             <img src="images/lang/lang__sv.png" alt="sv" data-google-lang="sv" class="language__img">
         </div>
         <section class="content">
-            <h1 class="content__title">Машинный перевод сайта</h1>
+            <h1 class="content__title">Автоматический перевод сайта</h1>
             <div class="content__desc">
-                <p>Перевод сайта на другие языки при помощи Google Translate Widget</p>
+                <p>Перевод сайта на другие языки при помощи виджета "Google Translate Widget"</p>
                 <p>Пример настраиваемого виджета</p>
-                <p>Hello Мир!!!</p>
+                <p>Hello World!!!</p>
             </div>
         </section>
+
+        <style>
+            /* Стили для демонстрации */
+            /* Styles for demonstration */
+            body {
+                display: flex;
+                min-height: 100vh !important;
+                margin: 0;
+                padding: 0;
+                font-family: tahoma;
+            }
+
+            .content {
+                text-align: center;
+                margin: auto;
+            }
+
+        </style>
+
     </body>
 
 </html>
