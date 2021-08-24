@@ -1,5 +1,5 @@
 /*!***************************************************
- * google-translate.js v1.0.3
+ * google-translate.js v1.0.4
  * https://Get-Web.Site/
  * author: Vitalii P.
  *****************************************************/
