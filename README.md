@@ -40,6 +40,14 @@
 </div>
 ```
 
+## Add new lang:
+
+```
+data-google-lang="{CODE}"
+```
+
+All available languages and their ISO-639-1 code can be found [here](https://cloud.google.com/translate/docs/languages).
+
 ## Example
 
 [Demo Page](http://demo.l2banners.ru/google-translate-custom-widget)
