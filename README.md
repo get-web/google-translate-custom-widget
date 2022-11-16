@@ -1,4 +1,4 @@
-# google-translate-custom-widget
+# google-translate-js-widget
 
 ![](https://raw.githubusercontent.com/get-web/Examples/main/google-translate/google-translate.gif)
 
