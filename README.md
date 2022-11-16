@@ -1,7 +1,7 @@
 # google-translate-widget
 
 ![](https://raw.githubusercontent.com/get-web/Examples/main/google-translate/google-translate.gif)
-
+![](https://github.com/htmlcssjspro/google-translate-widget/blob/9928e61b13583d3680652c06125467f8220c34cf/image/google-translate.gif)
 # Install:
 
 ## Add files
