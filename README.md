@@ -67,7 +67,7 @@ tag to the of your page and we won't translate any of the content on that page.
 
 `<meta name="google" value="notranslate" />`
 
-### More
+---
 
 Пример необходимо запускать непосредственно на сервере, иначе не будут работать
 куки. То есть недостаточно просто скачать все файлы и кликнуть по index.html.
