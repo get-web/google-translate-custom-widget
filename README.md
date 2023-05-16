@@ -46,11 +46,26 @@
 data-google-lang="{CODE}"
 ```
 
-All available languages and their ISO-639-1 code can be found [here](https://cloud.google.com/translate/docs/languages).
+All available languages and their ISO-639-1 code can be found
+[here](https://cloud.google.com/translate/docs/languages).
 
 ## Example
 
 [Demo Page](http://demo.l2banners.ru/google-translate-custom-widget)
+
+## More
+
+Sometimes there may be some content on your page that you don't want to
+translate. You can now add class="notranslate" to any HTML element to prevent
+that element from being translated. For example, you may want to do something
+like:
+
+`Email us at <span class="notranslate">sales at mydomain dot com</span>`
+
+And if you have an entire page that should not be translated, you can add a meta
+tag to the of your page and we won't translate any of the content on that page.
+
+`<meta name="google" value="notranslate" />`
 
 ### More
 
@@ -60,3 +75,13 @@ All available languages and their ISO-639-1 code can be found [here](https://clo
 записывать куки, по крайней мере codepen.
 
 [Концепция](https://get-web.site/blog/29-kastomnyj-vidzhet-googletranslate-dlja-sajta.html)
+
+### Поддержать проект:
+
+Данная модификация предоставляется абсолютно бесплатно, поэтому вы можете
+отправить **благодарность по реквизитам**:
+
+- https://yoomoney.ru/to/410018011293312
+
+_Любая ваша поддержка это мотивация выкладывать в общий доступ другие наработки
+и поддерживать их._

@@ -1,5 +1,5 @@
 /*!***************************************************
- * google-translate.js v1.0.4
+ * google-translate.js v1.0.5
  * https://Get-Web.Site/
  * author: Vitalii P.
  *****************************************************/
@@ -50,6 +50,7 @@ function TranslateInit(config) {
 	/* Initialize the widget with the default language */
 	new google.translate.TranslateElement({
 		pageLanguage: config.lang,
+		multilanguagePage: true, // Your page contains content in more than one languages
 	});
 
 	/* Вешаем событие  клик на флаги */

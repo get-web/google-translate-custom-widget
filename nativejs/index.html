@@ -1,60 +1,115 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Пользовательский виджет googleTranslate для сайта на чистом js
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Пользовательский виджет googleTranslate для сайта на чистом js</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--  google-translate -->
+		<link rel="stylesheet" href="css/google-translate.css" />
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="js/google-translate.js"></script>
+		<!--  END google-translate -->
+	</head>
 
-        <!--  google-translate -->
-        <link rel="stylesheet" href="css/google-translate.css">
-        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-        <script src="js/google-translate.js"></script>
-        <!--  END google-translate -->
+	<body class="body">
+		<div class="language">
+			<img
+				src="images/lang/lang__ru.png"
+				alt="ru"
+				data-google-lang="ru"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__en.png"
+				alt="en"
+				data-google-lang="en"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__de.png"
+				alt="de"
+				data-google-lang="de"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__fr.png"
+				alt="fr"
+				data-google-lang="fr"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__pt.png"
+				alt="pt"
+				data-google-lang="pt"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__es.png"
+				alt="es"
+				data-google-lang="es"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__it.png"
+				alt="it"
+				data-google-lang="it"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__zh.png"
+				alt="zh"
+				data-google-lang="zh-CN"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__ar.png"
+				alt="ar"
+				data-google-lang="ar"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__nl.png"
+				alt="nl"
+				data-google-lang="nl"
+				class="language__img"
+			/>
+			<img
+				src="images/lang/lang__sv.png"
+				alt="sv"
+				data-google-lang="sv"
+				class="language__img"
+			/>
+		</div>
+		<section class="content">
+			<h1 class="content__title">Автоматический перевод сайта</h1>
+			<div class="content__desc">
+				<p>
+					Перевод сайта на другие языки при помощи виджета
+					<span class="notranslate">"Google Translate Widget"</span>
+				</p>
+				<p>Пример настраиваемого виджета</p>
+				<p>Hello World!!!</p>
+			</div>
+		</section>
 
-    </head>
+		<style>
+			/* Стили для демонстрации */
+			/* Styles for demonstration */
+			body {
+				display: flex;
+				min-height: 100vh !important;
+				margin: 0;
+				padding: 0;
+				font-family: tahoma;
+			}
 
-    <body class="body">
-        <div class="language">
-            <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
-            <img src="images/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img">
-            <img src="images/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img">
-            <img src="images/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img">
-            <img src="images/lang/lang__pt.png" alt="pt" data-google-lang="pt" class="language__img">
-            <img src="images/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img">
-            <img src="images/lang/lang__it.png" alt="it" data-google-lang="it" class="language__img">
-            <img src="images/lang/lang__zh.png" alt="zh" data-google-lang="zh-CN" class="language__img">
-            <img src="images/lang/lang__ar.png" alt="ar" data-google-lang="ar" class="language__img">
-            <img src="images/lang/lang__nl.png" alt="nl" data-google-lang="nl" class="language__img">
-            <img src="images/lang/lang__sv.png" alt="sv" data-google-lang="sv" class="language__img">
-        </div>
-        <section class="content">
-            <h1 class="content__title">Автоматический перевод сайта</h1>
-            <div class="content__desc">
-                <p>Перевод сайта на другие языки при помощи виджета "Google Translate Widget"</p>
-                <p>Пример настраиваемого виджета</p>
-                <p>Hello World!!!</p>
-            </div>
-        </section>
-
-        <style>
-            /* Стили для демонстрации */
-            /* Styles for demonstration */
-            body {
-                display: flex;
-                min-height: 100vh !important;
-                margin: 0;
-                padding: 0;
-                font-family: tahoma;
-            }
-
-            .content {
-                text-align: center;
-                margin: auto;
-            }
-
-        </style>
-
-    </body>
-
+			.content {
+				text-align: center;
+				margin: auto;
+			}
+		</style>
+	</body>
 </html>
