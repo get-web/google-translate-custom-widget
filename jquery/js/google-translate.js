@@ -79,9 +79,13 @@ function TranslateGetCode(config) {
 function TranslateCookieHandler(val, domain) {
 	/* Записываем куки /язык_который_переводим/язык_на_который_переводим */
 	/* Writing down cookies /language_for_translation/the_language_we_are_translating_into */
-	$.cookie("googtrans", val);
+	$.cookie("googtrans", val, {
+		domain: document.domain,
+		path: '/'
+	});
 	$.cookie("googtrans", val, {
 		domain: "." + document.domain,
+		path: '/'
 	});
 
 	if (domain == "undefined") return;
@@ -89,10 +93,12 @@ function TranslateCookieHandler(val, domain) {
 	/* Writing down cookies for the domain, if it is assigned in the config */
 	$.cookie("googtrans", val, {
 		domain: domain,
+		path: '/'
 	});
 
 	$.cookie("googtrans", val, {
 		domain: "." + domain,
+		path: '/'
 	});
 }
 
