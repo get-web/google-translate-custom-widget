@@ -49,6 +49,16 @@ data-google-lang="{CODE}"
 All available languages and their ISO-639-1 code can be found
 [here](https://cloud.google.com/translate/docs/languages).
 
+## Events
+
+`FinishTranslate` - The event is triggered when the site translation is finished
+
+```
+document.addEventListener("FinishTranslate", function (e) {
+   // some code
+});
+```
+
 ## Example
 
 [Demo Page](http://demo.l2banners.ru/google-translate-custom-widget)
