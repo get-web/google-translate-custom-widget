@@ -27,6 +27,7 @@
 ```
 <div class="language">
    <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
+   <img src="images/lang/lang__uk.png" alt="uk" data-google-lang="uk" class="language__img">
    <img src="images/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img">
    <img src="images/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img">
    <img src="images/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img">
