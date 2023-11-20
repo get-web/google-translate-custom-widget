@@ -1,49 +1,50 @@
-/* Виджет назначает height: 100% , что может привести к непредксказуемому результату, если вы этого не планровали */
+/* Виджет назначает height: 100% , что может привести к непредксказуемому результату, если вы этого не планировали */
 
 html {
-    height: auto !important;
+	height: auto !important;
 }
 
 /* Фиксируем позицию body, которую меняет панель гугла */
 
 body {
-    top: 0 !important;
-    position: static !important;
+	top: 0 !important;
+	position: static !important;
 }
 
 /* Прячем панель гугла */
 
 .skiptranslate {
-    display: none !important;
+	display: none !important;
 }
 
-/* Убираем подсветку ссылок */
+/* Убираем подсветку ссылок и текста при наведении */
 
-.goog-text-highlight {
-    background-color: inherit;
-    box-shadow: none;
-    box-sizing: inherit;
+.goog-text-highlight,
+font > font {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	box-sizing: inherit;
 }
 
 /* language */
 
 .language {
-    position: fixed;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
+	position: fixed;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
 }
 
 .language__img {
-    margin: 2px;
-    cursor: pointer;
-    opacity: .5;
+	margin: 2px;
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 .language__img:hover,
 .language__img_active {
-    opacity: 1;
+	opacity: 1;
 }
